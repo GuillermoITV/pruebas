@@ -12,7 +12,7 @@ flann = cv2.FlannBasedMatcher(index_params, search_params)
 # Load all the images
 all_images_to_compare = []
 titles = []
-for f in glob.iglob("images\*"):
+for f in glob.iglob("*"):
     image = cv2.imread(f)
     titles.append(f)
     all_images_to_compare.append(image)
